@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        *{
+            background-color: blueviolet;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            transition: 1s;
+        }
+        footer{
+            color: aliceblue;
+        }
+        .gallery img:hover{
+            filter: grayscale(0%);
+            transform: scaleX(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+        <A href="1.2.jpeg.jpg"><img src="1.2.jpeg.jpg" height="550" width="550" alt="Image 1"></A>
+        <A href="2.jpeg.jpg"><img src="2.JPEG.jpg"height="250" width="250" alt="Image 2"></A>
+        <A href="6.jpeg.jpg"><img src="6.JPEG.jpg" height="250" width="250" alt="Image 3"></A>
+        <A href="4.jpeg.jpg"><img src="4.JPEG.jpg" height="250" width="250" alt="Image 3"></A>
+        <A href="5.jpeg.jpg"><img src="5.JPEG.jpg" height="250" width="250" alt="Image 3"></A>
+        <A href="3.jpeg.jpg"><img src="3.JPEG.jpg" height="250" width="250" alt="Image 3"></A>
+    </div>
+
+    <footer>
+        <p>REFRAMING LIFE FOUNDATION</p>
+    </footer>
+</body>
+</html>
